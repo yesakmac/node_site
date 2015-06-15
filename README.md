@@ -1,1 +1,2 @@
 # node_site
+I created this site to learn a bit more about foundations css. Been using bootstrap for a few years and decided to try something else. In addition to the confusion of a new front end css framework, I decided to use Jade for templating the site. There weren't any fantastic tutorials on using Jade + Foundations, so it was trial and alot of error. Nonetheless, got it done. 
