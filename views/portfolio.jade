@@ -1,0 +1,37 @@
+extends layout
+
+block link
+  -var selected = 'Portfolio';
+
+block content
+  #content.page-content
+    h3 Jack of many trades, master of a few good ones. 
+      h5 I've progressed through the information technology field over the last 10 years, and have been able to work on <br/> some awesome projects with really great people. Here's a taste of some of the technologies I've worked on.
+    #hr
+    </br>
+    </br>  
+    #one
+      #proj_one_row.row
+        #row(class='large-6 columns')
+          h4 Bread and Butter
+          p It's really not that hard to find someone who can say they can build a website or web app, but it is hard to find someone who can do it for years and still get excited about it. I've been developing websites and complex web applications in the power industry for years, and still enjoy adding value to the business with every single deployment and enhancement. 
+        #row(class='large-6 columns')
+          img(src='/img/macbook.png') 
+    #hr
+    </br>
+    </br>  
+    #two
+      #proj_two_row.row
+        #row(class='large-6 columns')
+          img(src='/img/rasp_pi.png')
+         #row(class='large-6 columns')
+          h4 Makin' like Kevin Bacon
+          p I've been known to tinker with an arduino here and there, but there's nothing like a pi.  I studied the Raspberry Pi shortly after the first version was announced by some crazy engineer from Broadcom, and my intrest is still just as piqued. I'm a fan of simple, effective technology, and feel that a Rasperry pi is exactly that. Think they aren't ready to run the internet? This website is run by this $35 modern marvel.
+    #hr
+    </br>
+    </br>  
+    #three
+      #proj_three_row.row
+          h4 We're goin mobile, folks
+          p The lines are bluring between mobile apps and web apps, so I decided to take the leap and jump on this whole 'app' train. I don't really know where it's going yet, but with my javascript and node skills, paired with my GIS skills something cool is bound to happen.
+          img(src='img/mobile.png')

@@ -1,0 +1,24 @@
+extends layout
+
+block link
+	-var selected = 'Contact'
+	
+block content
+	#content.page-content
+		p Want to work together? 
+		p I'm pretty easy to find. 
+			ul(class='small-block-grid-3')
+				li
+					i(class='fi-mail contact-icons', id='mail')
+				li
+					i(class='fi-telephone contact-icons', id="phone")
+				li
+					i(class='fi-social-linkedin contact-icons', id="linkedin")
+				li 
+					i(class='fi-social-twitter contact-icons', id="twitter")
+				li
+					i(class='fi-social-github contact-icons', id="github")
+				li
+					i(class='fi-social-google-plus contact-icons', id="googleplus")
+			</br>
+		p(id="ContactText")   

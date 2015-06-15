@@ -1,0 +1,51 @@
+doctype 
+html
+  block link
+    -var selected = 'Home'; //default
+  -var menu = { 'Home': '/#', 'Experience': '/experience', 'Portfolio': '/portfolio', 'Contact': '/contact' };
+  head
+    title= title
+    link(rel='stylesheet', href='/css/foundation.css')
+    link(rel='stylesheet', href='/css/slick/slick.css')
+    link(rel='stylesheet', href='/css/slick/slick-theme.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+      header
+       #stickybar(class='contain-to-grid sticky')
+        nav(class='top-bar' data-topbar role='navigation' data-options="sticky_on: large")
+          ul(class='title-area')
+            li(class='name') 
+              a(href="/#") Kasey Clark
+          section(class='top-bar-section')
+            ul(class='right')
+              each val, key in menu
+                  if selected === key
+                    li.active
+                      a(href=val, title=key)= key
+                  else
+                    li
+                      a(href=val, title=key)= key
+     #page_wrapper.page_wrap           
+      block content
+      script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+      script(src='/js/slick/slick.js')
+      script(src='/js/jquery.fadethis.js')      
+      script(src='/js/app.main.js')
+      script(src='/js/foundation.min.js')
+  footer
+    if selected === 'Contact'
+  
+    else
+      #contact_start.row
+        #large_12(class='large-12 columns')
+          #panel.panel
+            h4 Get in touch!
+            #panel_row.row
+              #large_9(class='large-9 columns')
+                p I'd like to hear from you, if you are into my work. 
+              #large_3(class='large-3 columns')
+                a(href='/contact', class='radius button right') Find Me
+   #Quote_Container.QuoteContainer
+    a(class='button secondary', id='quote_btn', align='center') New Quote
+    #quote_name.QuoteName
+    #quote_text.QuoteText
